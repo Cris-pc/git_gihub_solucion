@@ -1,0 +1,98 @@
+servicio crontab solicitar que este levantado
+usuario root del 47
+verificar ruta creada en el 47 de los script que se ejecutan el crontab, incluido el log que este creada la ruta
+ping de olt de pruebas desde el 47 - stalin consultar los olts de pruebas, sino hay ping con alex de los permisos
+librerias de pyhton deben estar en el 47
+verificar que la carpeat del cnr este creada en el 47 - python /home/cquiguango/ScopesSaturados/reporteIP.py
+
+
+/*
+[root@rdasoporte ~]# crontab -e
+
+[1]+  Detenido                crontab -e
+[root@rdasoporte ~]# java -jar /home/scripts/masivosGTixi/sincronizacionCnr/cnr_v1.jar 'consistencyReports'
+resultado OK./cnr_rules -N cisco -P T3lc0n3t109 -run scope
+
+Consistency rules: 2 rules run; 0 with violations.
+DHCP Scope Network and Broadcast Addresses: 0 violations.
+DHCP Scope Subnets and IP Ranges: 0 violations.
+
+*/
+
+probar smnp , solo funciona para ZTE la siguiente linea.
+
+snmpget -v 3  -l authPriv -a sha -A mvh18LNXqq  -x des -X mvh18LNXqq -u MIDDLEWARE 10.221.18.40 .1.3.6.1.4.1.3902.1082.110.5.2.2.1.18.285278985.404029696 -Ovq
+
+ruta del .27 donde estan los script a ejecutarse en crontab
+/var/spool/cron
+
+Conexion a la nueva base de datos
+DB IP: 172.24.8.47
+usuario: rdasoporte
+clave: rdasoporte
+
+PEDIR OLT DE PRUEBAS, QUE NOS AYUDEN CON LA IP DE GESTION 
+
+get extrae informacion
+snmpget
+snmpzet ejecutar con una persona de tap o desarrollo 
+
+la ip de gestion se utiliza para la gestion de ssh
+
+snmpbulkwalk -v 3 -l authPriv -a sha -A mvh18LNXqq -x des -X mvh18LNXqq -u MIDDLEWARE 10.221.18.53 .1.3.6.1.4.1.3902.1082.500.2.2.1.5.1.1
+
+Crontab estan habilitados
+se valido conexion a los olt 
+se valido conexion ssh a los olt
+validacion de comandos snmp a los olt huawei y zte de pruebas
+novedad se tiene conexion a los olt de produccion 
+
+
+sudo scp -r root@10.100.105.27:/home/scripts/masivo/cnr/ /home/ciflores/RESPALDO2/masivo/
+
+
+n3tT.l1f3T3st
+sudo scp -r root@10.100.105.27:/home/scripts/masivo/contingencia.jar_bkp110722/ /home/ciflores/RESPALDO2/masivo/ ok
+sudo scp -r root@10.100.105.27:/home/scripts/masivo/eacuenca/ /home/ciflores/RESPALDO2/masivo/ ok
+sudo scp -r root@10.100.105.27:/home/scripts/masivo/fadum/ /home/ciflores/RESPALDO2/masivo/ ok
+sudo scp -r root@10.100.105.27:/home/scripts/masivo/Glenda/ /home/ciflores/RESPALDO2/masivo/ ok 
+sudo scp -r root@10.100.105.27:/home/scripts/masivo/gtixi/ /home/ciflores/RESPALDO2/masivo/ok
+sudo scp -r root@10.100.105.27:/home/scripts/masivo/lib/ /home/ciflores/RESPALDO2/masivo/ ok
+sudo scp -r root@10.100.105.27:/home/scripts/masivo/logs/ /home/ciflores/RESPALDO2/masivo/ok
+
+
+n3tT.l1f3T3st
+sudo scp -r root@10.100.105.27:/home/scripts/masivo/masivo.jar/ /home/ciflores/RESPALDO2/masivo/
+sudo scp -r root@10.100.105.27:/home/scripts/masivo/masivo.jar_bkp110722/ /home/ciflores/RESPALDO2/masivo/
+sudo scp -r root@10.100.105.27:/home/scripts/masivo/masivoOnt.jar/ /home/ciflores/RESPALDO2/masivo/ OK
+sudo scp -r root@10.100.105.27:/home/scripts/masivo/masivoOnt.jar_bkp110722/ /home/ciflores/RESPALDO2/masivo/ OK
+sudo scp -r root@10.100.105.27:/home/scripts/masivo/masivosGTixi/ /home/ciflores/RESPALDO2/masivo/ OK
+sudo scp -r root@10.100.105.27:/home/scripts/masivo/nohup.out/ /home/ciflores/RESPALDO2/masivo/ OK
+sudo scp -r root@10.100.105.27:/home/scripts/masivo/ont1.jar/ /home/ciflores/RESPALDO2/masivo/ OK
+sudo scp -r root@10.100.105.27:/home/scripts/masivo/ont1.jar_bkp110722/ /home/ciflores/RESPALDO2/masivo/ ok
+sudo scp -r root@10.100.105.27:/home/scripts/masivo/ont2.jar/ /home/ciflores/RESPALDO2/masivo/ ok
+
+
+sudo scp -r root@10.100.105.27:/home/scripts/masivo/ont2.jar_bkp110722/ /home/ciflores/RESPALDO2/masivo/ 
+sudo scp -r root@10.100.105.27:/home/scripts/masivo/ont3.jar/ /home/ciflores/RESPALDO2/masivo/
+sudo scp -r root@10.100.105.27:/home/scripts/masivo/ont3.jar_bkp110722/ /home/ciflores/RESPALDO2/masivo/
+sudo scp -r root@10.100.105.27:/home/scripts/masivo/ont4.jar/ /home/ciflores/RESPALDO2/masivo/
+sudo scp -r root@10.100.105.27:/home/scripts/masivo/ont4.jar_bkp110722/ /home/ciflores/RESPALDO2/masivo/
+sudo scp -r root@10.100.105.27:/home/scripts/masivo/ont5.jar/ /home/ciflores/RESPALDO2/masivo/
+sudo scp -r root@10.100.105.27:/home/scripts/masivo/ont5.jar_bkp110722/ /home/ciflores/RESPALDO2/masivo/
+sudo scp -r root@10.100.105.27:/home/scripts/masivo/ont5.jar_bkp110722/ /home/ciflores/RESPALDO2/masivo/
+sudo scp -r root@10.100.105.27:/home/scripts/masivo/reporteIP.csv/ /home/ciflores/RESPALDO2/masivo/
+sudo scp -r root@10.100.105.27:/home/scripts/masivo/reportes/ /home/ciflores/RESPALDO2/masivo/
+sudo scp -r root@10.100.105.27:/home/scripts/masivo/respaldoJar/ /home/ciflores/RESPALDO2/masivo/
+sudo scp -r root@10.100.105.27:/home/scripts/masivo/test/ /home/ciflores/RESPALDO2/masivo/
+
+
+
+
+
+
+
+
+
+
+
