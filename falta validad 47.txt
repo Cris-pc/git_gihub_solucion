@@ -87,6 +87,7 @@ sudo scp -r root@10.100.105.27:/home/scripts/masivo/respaldoJar/ /home/ciflores/
 sudo scp -r root@10.100.105.27:/home/scripts/masivo/test/ /home/ciflores/RESPALDO2/masivo/
 
 
+cambio agregado
 
 
 
